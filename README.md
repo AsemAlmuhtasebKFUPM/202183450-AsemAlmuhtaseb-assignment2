@@ -19,8 +19,8 @@ The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a
 ### How to Run Locally
 
 1. **Download/Clone the project**
-   ```
-   git clone <https://github.com/AsemAlmuhtasebKFUPM/202183450-AsemAlmuhtaseb-assignment2.git>
+   ```bash
+   git clone https://github.com/AsemAlmuhtasebKFUPM/202183450-AsemAlmuhtaseb-assignment2.git
    cd assignment-2
    ```
 
