@@ -21,7 +21,7 @@ The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a
 1. **Download/Clone the project**
    ```bash
    git clone https://github.com/AsemAlmuhtasebKFUPM/202183450-AsemAlmuhtaseb-assignment2.git
-   cd assignment-2
+   cd 202183450-AsemAlmuhtaseb-assignment2
    ```
 
 2. **Open in browser**
@@ -38,5 +38,5 @@ The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a
 
 ## AI Usage Summary
 
-This project used ChatGPT for planning and code generation, and GitHub Copilot for autocomplete and debugging during development. Detailed information about AI usage can be found in [ai-usage-report.md](docs/ai-usage-report.md).
+This project used ChatGPT for planning, debugging, code improvements, and documentation support, and GitHub Copilot for autocomplete and debugging during development. Detailed information about AI usage can be found in [ai-usage-report.md](docs/ai-usage-report.md).
 
