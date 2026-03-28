@@ -75,6 +75,9 @@ const status = document.getElementById("status");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+
   status.textContent = "Message sent (demo)! Thanks for reaching out.";
+  status.classList.add("show");
+
   form.reset();
 });
