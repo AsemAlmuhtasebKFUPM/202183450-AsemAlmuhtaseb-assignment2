@@ -60,34 +60,47 @@
     </section>
 
     <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
+  <div class="container">
+    <h2>Projects</h2>
+    <p class="tagline">Search projects by name or description.</p>
 
-        <div class="grid">
-          <article class="card">
-            <img class="project-media-img" src="assets/images/Project1.png" alt="StudyBuddy Planner preview">
-            <div class="card-body">
-              <h3>StudyBuddy Planner</h3>
-              <p>
-                A simple study planner web app UI concept that helps students organize daily tasks and build habits.
-                It focuses on a clean layout, readable sections, and a modern card-based design.
-              </p>
-            </div>
-          </article>
+    <div class="project-search">
+      <label for="projectSearch">Search Projects</label>
+      <input
+        type="text"
+        id="projectSearch"
+        placeholder="Type to filter projects..."
+        aria-label="Search projects"
+      />
+    </div>
 
-          <article class="card">
-            <img class="project-media-img" src="assets/images/Project2.png" alt="WeatherSnap preview">
-            <div class="card-body">
-              <h3>WeatherSnap</h3>
-              <p>
-                A weather dashboard UI concept that shows current conditions and a short forecast in a clear, friendly design.
-                It’s designed to be easy to read on mobile and uses simple visual icons.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    <div class="grid" id="projectsGrid">
+      <article class="card project-card" data-title="StudyBuddy Planner" data-description="A simple study planner web app UI concept that helps students organize daily tasks and build habits. It focuses on a clean layout, readable sections, and a modern card-based design.">
+  <img class="project-media-img" src="assets/images/Project1.png" alt="StudyBuddy Planner preview">
+  <div class="card-body">
+    <h3 class="project-title">StudyBuddy Planner</h3>
+    <p class="project-description">
+      A simple study planner web app UI concept that helps students organize daily tasks and build habits.
+      It focuses on a clean layout, readable sections, and a modern card-based design.
+    </p>
+  </div>
+</article>
+
+<article class="card project-card" data-title="WeatherSnap" data-description="A weather dashboard UI concept that shows current conditions and a short forecast in a clear, friendly design. It’s designed to be easy to read on mobile and uses simple visual icons.">
+  <img class="project-media-img" src="assets/images/Project2.png" alt="WeatherSnap preview">
+  <div class="card-body">
+    <h3 class="project-title">WeatherSnap</h3>
+    <p class="project-description">
+      A weather dashboard UI concept that shows current conditions and a short forecast in a clear, friendly design.
+      It’s designed to be easy to read on mobile and uses simple visual icons.
+    </p>
+  </div>
+</article>
+    </div>
+
+    <p id="noResults" class="no-results" hidden>No projects match your search.</p>
+  </div>
+</section>
 
 
     <section id="contact" class="section">

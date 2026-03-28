@@ -3,42 +3,78 @@
    ======================================== */
 
 /* ========== FOOTER YEAR UPDATE ========== */
-// Automatically update the current year in the footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
 /* ========== THEME TOGGLE FUNCTIONALITY ========== */
 const themeBtn = document.getElementById("themeBtn");
 
-// Load saved theme preference from localStorage on page load
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "light") {
   document.body.classList.add("light");
 }
 
-// Toggle theme and save preference to localStorage
 themeBtn.addEventListener("click", () => {
   document.body.classList.toggle("light");
   const isLight = document.body.classList.contains("light");
   localStorage.setItem("theme", isLight ? "light" : "dark");
 });
 
-/* ========== CONTACT FORM HANDLING ========== */
-// Note: This is a demo form. No actual email backend is implemented.
-// In a production environment, connect this to a backend service.
+/* ========== LIVE PROJECT SEARCH FILTER + HIGHLIGHT ========== */
+const projectSearch = document.getElementById("projectSearch");
+const projectCards = document.querySelectorAll(".project-card");
+const noResults = document.getElementById("noResults");
 
+function highlightText(text, searchValue) {
+  if (!searchValue) return text;
+
+  const escapedValue = searchValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(${escapedValue})`, "gi");
+
+  return text.replace(regex, "<mark>$1</mark>");
+}
+
+if (projectSearch) {
+  projectSearch.addEventListener("input", () => {
+    const searchValue = projectSearch.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    projectCards.forEach((card) => {
+      const titleText = card.dataset.title;
+      const descriptionText = card.dataset.description;
+
+      const title = titleText.toLowerCase();
+      const description = descriptionText.toLowerCase();
+
+      const matches =
+        title.includes(searchValue) || description.includes(searchValue);
+
+      const titleElement = card.querySelector(".project-title");
+      const descriptionElement = card.querySelector(".project-description");
+
+      if (matches || searchValue === "") {
+        card.style.display = "block";
+        visibleCount++;
+
+        titleElement.innerHTML = highlightText(titleText, searchValue);
+        descriptionElement.innerHTML = highlightText(descriptionText, searchValue);
+      } else {
+        card.style.display = "none";
+
+        titleElement.textContent = titleText;
+        descriptionElement.textContent = descriptionText;
+      }
+    });
+
+    noResults.hidden = visibleCount !== 0;
+  });
+}
+
+/* ========== CONTACT FORM HANDLING ========== */
 const form = document.getElementById("contactForm");
 const status = document.getElementById("status");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
-  // Display success message to user
   status.textContent = "Message sent (demo)! Thanks for reaching out.";
-  
-  // Clear form fields after submission
   form.reset();
-  
-  // Optional: Clear success message after 5 seconds
-  // setTimeout(() => { status.textContent = ""; }, 5000);
 });
-

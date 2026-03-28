@@ -211,6 +211,28 @@ label {
   margin-bottom: 6px;
 }
 
+.project-search {
+  margin: 18px 0 16px;
+  max-width: 420px;
+}
+
+.project-search label {
+  margin-bottom: 8px;
+}
+
+.no-results {
+  margin-top: 16px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+mark {
+  background: var(--accent);
+  color: white;
+  padding: 0 4px;
+  border-radius: 6px;
+}
+
 input,
 textarea {
   width: 100%;
