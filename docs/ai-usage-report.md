@@ -1,53 +1,37 @@
-# AI Usage Report (Assignment 1)
+# AI Usage Report assignment2
 
-## Tools Used & Use Cases
+## AI Tools Used
+- ChatGPT
 
-### ChatGPT
-I used ChatGPT throughout the assignment to:
-- Plan the required folder/file structure and make sure I included all required documents and sections (About, Projects, Contact).
-- Generate starter code for `index.html`, `styles.css`, and `script.js` that matched the rubric (responsive layout + JavaScript feature).
-- Debug issues during development (file naming, image paths, missing elements, and layout problems).
-- Improve UI/UX by refactoring the page layout (hero section, cards, spacing, typography) and making the site look more professional.
-- Generate placeholder project descriptions and AI-generated project images for my Projects section.
+## How I Used AI
+I used ChatGPT to support my work during this assignment. The AI was used as a learning and assistance tool, not as a replacement for my own work.
 
-### GitHub Copilot
-I used GitHub Copilot inside VS Code to:
-- Speed up writing HTML/CSS/JS by autocompleting repetitive code (sections, card layout, form fields).
-- Add helpful comments and clarify what key blocks do (theme toggle, form submit handler).
-- Fix small mistakes while coding (missing brackets/quotes, incorrect variable names, minor syntax errors).
-- Suggest quick improvements while typing (cleaner formatting, consistent indentation, and better naming).
+### 1. Problem-Solving and Explanations
+I used ChatGPT to understand assignment requirements and decide which features were suitable for my portfolio website. It helped me choose practical features such as:
+- live project search and filtering
+- hover effects and transitions
 
-## Benefits & Challenges
+### 2. Debugging Help
+I used ChatGPT to identify and fix JavaScript and Git issues during development. For example:
+- fixing problems in the project search and highlight logic
+- correcting JavaScript structure issues
+- resolving Git remote and push problems when connecting the local project to GitHub
 
-### Benefits
-- Faster development: AI helped me create a working website structure quickly instead of starting from a blank file.
-- Better design decisions: AI suggested clean layouts and styling ideas (card layout, spacing, responsive grid, theme variables).
-- Debugging support: AI helped me fix common beginner mistakes like incorrect file paths, missing `<img>` tags, and CSS sizing issues.
-- Documentation help: AI helped me format technical writing and include the right details for the rubric.
-
-### Challenges / Limitations
-- AI outputs were sometimes too generic or didn’t match my exact file names, so I had to adjust paths (example: image names like `Project1.png` vs `project1.png`).
-- Some suggestions worked but didn’t look good at first, so I needed to iterate and tweak CSS (image sizing, spacing, header layout).
-- I still had to test everything manually in the browser, especially responsive behavior and image display.
-
----
-
-## Learning Outcomes
-By using AI during this assignment, I learned:
-- How to structure a simple front-end project using separate HTML/CSS/JS folders.
-- How CSS Grid and Flexbox work together to create responsive layouts.
-- How to use JavaScript for basic interactivity (theme toggle, form feedback) and how to save a preference using `localStorage`.
-- A practical workflow: generate a baseline → test → debug → refine → document.
-
----
-
-## Responsible Use & Modifications (Academic Integrity)
-To use AI responsibly, I:
-- Reviewed all AI-generated code line-by-line and made sure I understood what each section did before keeping it.
-- Modified the generated code to match my own project structure and file names.
-- Tested the site in the browser and fixed issues myself (image sizing, responsive layout, and navigation behavior).
-- Customized content (name, About text, project descriptions) so the final submission reflects my own work.
-- Used AI as support (planning, debugging, and improving), not as a “copy/paste and submit” solution.
-If you tell me whether you used only ChatGPT or also Copilot/Cursor, I can tailor the “Tools Used” section so it perfectly matches what you actually did.
+### 3. Code Review and Improvements
+I used ChatGPT to review parts of my HTML, CSS, and JavaScript and suggest improvements. Examples include:
+- improving the project search feature
+- suggesting accessibility improvements such as `aria-live="polite"` for the status message
 
 
+## My Understanding of the AI Output
+I reviewed the AI suggestions before using them and edited the code to fit my own project structure. I made sure I understood:
+- how the search filter works
+- how localStorage saves the theme
+- how CSS transitions and hover effects improve user experience
+- how built-in HTML validation and empty-state messages provide user feedback
+
+## Changes I Made to AI Suggestions
+I did not copy everything exactly as given. I adjusted the AI suggestions to match my portfolio website, file structure, and design.
+
+## Reflection
+AI was useful for helping me learn, solve problems faster, and improve the quality of my project. I still reviewed, tested, and edited the final code myself to make sure I understood it and that it worked correctly.
