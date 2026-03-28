@@ -1,65 +1,38 @@
-# Technical Documentation (Assignment 1)
+# Technical Documentation (Assignment 2)
 
 ## Overview
-This project is a simple, responsive personal portfolio website built with HTML, CSS, and JavaScript.  
-It includes three required sections (About, Projects, Contact) and basic interactivity (theme toggle + contact form feedback).
+This project is a responsive personal portfolio website built with HTML, CSS, and JavaScript. It includes About, Projects, and Contact sections, along with interactive features required for the assignment.
 
 ## Technologies Used
-- **HTML5**: semantic structure (header, main, section, footer), accessibility attributes
-- **CSS3**: Flexbox/Grid layout, responsive design, theme variables
-- **JavaScript**: DOM manipulation, localStorage, form interaction
+- **HTML5** for page structure and form elements
+- **CSS3** for layout, responsiveness, styling, and transitions
+- **JavaScript** for interactivity, filtering, highlighting, and theme saving
 
 ## File Structure
-- `index.html`  
-  Contains the page structure and content:
-  - Header navigation links (About, Projects, Contact)
-  - Hero section (intro + buttons)
-  - About section (2–3 sentence intro + tagline)
-  - Projects section (2 project cards with images and descriptions)
-  - Contact section (Name/Email/Message form)
-  - Footer (copyright + back-to-top link)
-
-- `css/styles.css`  
-  Contains styling and responsive layout:
-  - CSS variables for theme colors
-  - Flexbox for header layout
-  - CSS Grid for the projects layout
-  - Media query to stack project cards on smaller screens
-  - Card styles, spacing, typography, and form styling
-
-- `js/script.js`  
-  Adds interactivity:
-  - Updates footer year automatically
-  - Theme toggle (dark/light) and saves preference using `localStorage`
-  - Contact form demo submission (shows success message, no backend)
-
-- `assets/images/`  
-  Stores project images used in the Projects section.
-
-- `docs/ai-usage-report.md`  
-  Explains how AI tools (ChatGPT + GitHub Copilot) were used during development.
+- `index.html` — website structure and content
+- `css/styles.css` — layout, theme, hover effects, and responsive styling
+- `js/script.js` — theme toggle, search filter, highlighting, and form feedback
+- `assets/images/` — project images
+- `docs/ai-usage-report.md` — AI usage documentation
+- `docs/technical-documentation.md` — technical summary
 
 ## Features Implemented
-### Responsive Design
-- Desktop: projects displayed in two columns using CSS Grid.
-- Mobile/tablet: projects stack into one column using a media query.
+- **Dynamic Content:** live project search that filters cards while typing and highlights matches
+- **Data Handling:** dark/light theme saved with `localStorage`
+- **Animation and Transitions:** smooth scrolling and hover effects on buttons, links, and cards
+- **Error Handling and User Feedback:** browser validation for required form fields and a “No projects match your search” message
 
-### Interactivity
-- **Theme toggle:** user can switch between dark/light mode, preference is saved in localStorage.
-- **Form interaction:** when the contact form is submitted, a confirmation message appears (demo only).
+## Responsive Design
+The layout adapts to different screen sizes using Flexbox, Grid, and a media query. Project cards display in two columns on larger screens and one column on smaller screens.
 
 ## Testing
-I tested the website by:
-- Resizing the browser window to check layout changes.
-- Using Chrome/Edge DevTools device toolbar to test common sizes:
-  - 375px (mobile)
-  - 768px (tablet)
-  - 1200px+ (desktop)
-- Clicking navigation links to confirm correct scrolling to sections.
-- Verifying theme toggle works and persists after refresh.
-- Submitting the contact form to confirm the demo success message appears.
+The website was tested by:
+- resizing the browser window
+- using browser device tools for mobile, tablet, and desktop
+- checking theme persistence after refresh
+- testing the project search and no-results message
+- testing form validation and submission feedback
 
-## Known Limitations / Future Improvements
-- Contact form does not send real emails (no backend).
-- Projects are placeholder concepts and can be replaced with real projects and links.
-- Could add more sections (Skills, Education) and improve animations later.
+## Limitations
+- The contact form is a demo and does not send real emails
+- Project cards are sample items and can be replaced with real projects later

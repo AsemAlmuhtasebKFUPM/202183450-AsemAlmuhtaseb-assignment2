@@ -18,8 +18,8 @@ The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a
 
 1. **Download/Clone the project**
    ```
-   git clone <repository-url>
-   cd assignment-1
+   git clone <https://github.com/AsemAlmuhtasebKFUPM/202183450-AsemAlmuhtaseb-assignment2.git>
+   cd assignment-2
    ```
 
 2. **Open in browser**
