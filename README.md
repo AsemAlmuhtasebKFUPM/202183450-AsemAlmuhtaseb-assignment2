@@ -6,11 +6,13 @@ A clean, responsive portfolio website built with HTML, CSS, and vanilla JavaScri
 - Modern, minimalist design with dark/light theme toggle
 - Fully responsive layout (desktop, tablet, mobile)
 - Smooth navigation with sticky header
+- Live project search with match highlighting
 - Contact form with client-side validation
 - Semantic HTML5 structure
 - CSS Grid and Flexbox layouts
+- Hover effects and smooth transitions
 
-The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a professional About section and working contact form.
+The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a professional About section and contact form feedback.
 
 ## Setup Instructions
 
@@ -28,10 +30,11 @@ The portfolio showcases two projects (StudyBuddy Planner and WeatherSnap) with a
    - Works in all modern browsers (Chrome, Firefox, Safari, Edge)
 
 3. **Features to try**
-   - Click "Toggle Theme" to switch between dark and light modes
-   - Navigate using the menu links
-   - Submit the contact form (demo form - no backend)
-   - Click "Back to top" in the footer to scroll to home
+- Click "Toggle Theme" to switch between dark and light modes
+- Navigate using the menu links
+- Use the project search bar to filter projects live
+- Submit the contact form (demo form - no backend)
+- Click "Back to top" in the footer to scroll to home
 
 ## AI Usage Summary
 
